@@ -1,0 +1,57 @@
+body { 
+    font-family: Arial, sans-serif; /* fuente de la letra */
+    display: flex; /* disposicion del contenido */
+    justify-content: center; /* justificación del contenido */
+    align-items: center; /* alineación del contenido */
+    height: 100vh; /* altura  */
+    background-color: #ffffff; /* color de fondo en blanco */
+    margin: 0; /* elimina el margen */
+    flex-direction: column; /* elementos encima de una columna */ 
+  }
+  
+  h1 { 
+    text-align: center; /* centra el titulo */
+    font-size: 28px; /* tamaño de la fuente */
+    margin-bottom: 50px; /* espacio debajo del titulo*/
+    
+  }
+  
+  #calculadora { 
+    width: 370px; /* ancho calculadora */ 
+    border: 2px solid black; /* borde negro */
+    background-color: #d3d3d3; /* fondo de la calculadora */
+    padding: 10px; /* espacio entre elementos internos  */
+    box-sizing: border-box; /* padding y borde del ancho */
+    
+  }
+  
+  #pantalla {
+    width: 100%; /* ancho de la pantalla */
+    height: 70px; /* altura de la pantalla */
+    background-color: #dbe4ee; /* color de fondo */
+    border: 1px solid #0c0c0c; /* borde negro */
+    margin-bottom: 15px; /* espacio inferior */
+    text-align: right; /* alinea el texto a la derecha */
+    padding-right: 15px; /* espaciado a la derecha */
+    line-height: 60px; /* espaciado desde arriba */
+    font-size: 24px; /* tamaño del texto */
+    box-sizing: border-box; /* padding y borde del ancho */
+  }
+  
+  #teclado { 
+    display: grid; /* configura las teclas como una cuadrícula */
+    grid-template-columns: repeat(4, 1fr); /* divide el teclado en 4 columnas */
+    gap: 10px; /* espacio entre cada botón */
+  }
+ 
+  #teclado div div {
+    display: flex; /* configura cada boton como un flex */
+    justify-content: center; /* centra el contenido */
+    align-items: center; /* centra el contenido */
+    height: 60px; /* altura de los botones */
+    font-size: 24px; /* tamaño de la fuente de los botones */
+    background-color: #c0c0c0; /* color de fondo */
+    color: #000; /* color del texto */
+    border: 1px solid #777; /* borde y color */
+  }
+  
